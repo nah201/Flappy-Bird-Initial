@@ -16,7 +16,7 @@ public class PipeSpawner : MonoBehaviour
     void Update()
     {
         currentTime += Time.deltaTime;
-        if (currentTime >= endTime)
+        if (currentTime >= endTime ) 
         {
             Vector2 newPipePos = new Vector2(transform.position.x, transform.position.y );
             GameObject newPipe = Instantiate(pipePrefab, newPipePos, transform.rotation);
